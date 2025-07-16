@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ 
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <title>WebRTC Video Chat</title>
+  <div class="container">
+    
+    <div id="join-screen">
+      <h1>WebRTC Video Chat</h1>
+
+      <div class="controls">
+        <input type="text" id="roomId" placeholder="Enter Room ID" />
+        <button onclick="joinRoom()">Join Room</button>
+        <button onclick="createRoom()">Create New Room</button>
+      </div>
+
+      <p id="status"></p>
+    </div>
+
+    
+    <div id="video-screen" style="display: none;">
+      <p id="room-display" style="margin-bottom: 10px;"></p>
+
+      <h2>Your Local Stream</h2>
+      <video id="localVideo" autoplay muted playsinline></video>
+
+      <h2>Their Stream</h2>
+      <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+  </div>
+
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
