@@ -43,11 +43,7 @@ Getting Started:
 
    http://localhost:3000
 
-Usage:
-------
-- Enter a room ID and click "Join"
-- Share the room ID with another user to let them join
-- Both users will be able to see and hear each other live
+
 
 Technologies Used:
 ------------------
