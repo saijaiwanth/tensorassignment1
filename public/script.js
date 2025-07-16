@@ -6,7 +6,7 @@ const config = {
 };
 
 window.createRoom = function () {
-  const generatedId = Math.random().toString(20);
+  const generatedId = Math.random().toString(36).substring(2, 8);
    document.getElementById('roomId').value = generatedId;
   document.getElementById('status').innerText = `Room Created: ${generatedId} (Share this with to login)`;
   setTimeout(() => {
