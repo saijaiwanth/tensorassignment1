@@ -9,7 +9,7 @@ const io = socketIO(server);
 
 const PORT = 3000;
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '.')));
 
 io.on('connection', (socket) => {
   console.log('User connected:', socket.id);
